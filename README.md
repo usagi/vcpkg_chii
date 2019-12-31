@@ -14,23 +14,23 @@ This is a simple .cmake gimmicks for CMake and vcpkg:
 
 ## Usage
 
-1. Get the `.cmake` file(s) into your project or CMake module directory <cmake>
-2. `include` in your `CMakeLists.txt` ( See also <example/CMakeLists.txt> in the example project )
+1. Get the `.cmake` file(s) into your project or CMake module directory [cmake](./cmake)
+2. `include` in your `CMakeLists.txt` ( See also [example/CMakeLists.txt](example/CMakeLists.txt) in the example project )
 3. Use `vcpkg_chii_find_package` instead of `find_package` ( See also the example too )
 
 ```cmake
-# With vcpkg-chii features ( full automatically package resolving with vcpkg and vcpkg-chii! )
+# With vcpkg_chii features ( full automatically package resolving with vcpkg and vcpkg-chii! )
 mkdir build && pushd build && cmake ..
 ```
 
-```
-# Without vcpkg-chii features ( for use if end-user need the other package manager or manual controlling )
+```cmake
+# Without vcpkg_chii features ( for use if end-user need the other package manager or manual controlling )
 mkdir build && pushd build && cmake .. -DVCPKG_CHII_ENABLE=OFF
 ```
 
 ### Example 
 
-- <example>
+- [example](./example)
 
 ## License
 
