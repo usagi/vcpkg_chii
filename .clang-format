@@ -1,0 +1,126 @@
+AccessModifierOffset: -2
+
+AlignAfterOpenBracket: Align
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
+#AlignConsecutiveMacros: true
+#AlignEscapedNewlines: ENAS_DontAlign
+AlignOperands: true
+AlignTrailingComments: true
+
+#AllowAllArgumentsOnNextLine: true
+#AllowAllConstructorInitializersOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+#AllowShortBlocksOnASingleLine: Never
+AllowShortBlocksOnASingleLine: true
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: Inline
+#AllowShortIfStatementsOnASingleLine: Never
+#AllowShortLambdasOnASingleLine: All
+AllowShortLoopsOnASingleLine: false
+
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: true
+#AlwaysBreakTemplateDeclarations: MultiLine
+
+BasedOnStyle: LLVM
+
+BinPackArguments: false
+BinPackParameters: false
+
+BraceWrapping:
+  AfterClass: true
+  AfterControlStatement: true
+  AfterEnum: true
+  AfterFunction: true
+  AfterNamespace: true
+  AfterStruct: true
+  AfterUnion: true
+  BeforeCatch: true
+  BeforeElse: true
+  IndentBraces: false
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false
+
+BreakBeforeBinaryOperators: All
+BreakBeforeBraces: Allman
+BreakConstructorInitializers: BeforeComma
+BreakBeforeTernaryOperators: true
+#BreakInheritanceList: BeforeComma
+BreakStringLiterals: true
+
+ColumnLimit: 0
+
+CompactNamespaces: true
+
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
+ConstructorInitializerIndentWidth: 2
+
+ContinuationIndentWidth: 2
+
+Cpp11BracedListStyle: false
+
+DerivePointerAlignment: false
+
+ExperimentalAutoDetectBinPacking: false
+
+FixNamespaceComments: true
+
+# The alternate semantics for the Microsoft::VisualStudio::CppUnitTestFramework
+ForEachMacros: ['TEST_CLASS']
+
+IncludeBlocks: Regroup
+
+IndentCaseLabels: false
+#IndentGotoLabels: false
+IndentPPDirectives: AfterHash
+IndentWidth: 2
+IndentWrappedFunctionNames: true
+
+KeepEmptyLinesAtTheStartOfBlocks: false
+
+Language: Cpp
+
+MacroBlockBegin: With
+
+MaxEmptyLinesToKeep: 1
+
+NamespaceIndentation: All
+
+PointerAlignment: Left
+
+ReflowComments: true
+
+SortIncludes: true
+SortUsingDeclarations: true
+
+SpaceAfterCStyleCast: false
+#SpaceAfterLogicalNot: false
+SpaceAfterTemplateKeyword: true
+SpaceBeforeAssignmentOperators: true
+#SpaceBeforeCpp11BracedList: false
+#SpaceBeforeCtorInitializerColon: false
+#SpaceBeforeInheritanceColon: false
+SpaceBeforeParens: ControlStatements
+#SpaceBeforeRangeBasedForLoopColon: true
+#SpaceBeforeSquareBrackets: false
+SpaceInEmptyParentheses: false
+#SpaceInEmptyBlock: true
+
+SpacesBeforeTrailingComments: 2
+SpacesInAngles: true
+SpacesInCStyleCastParentheses: false
+#SpacesInConditionalStatement: true
+SpacesInContainerLiterals: false
+SpacesInParentheses: true
+SpacesInSquareBrackets: false
+
+#Standard: c++17
+
+#StatementMacros: [ 'TEST_MODULE_INITIALIZE', 'TEST_MODULE_CLEANUP', 'TEST_CLASS_INITIALIZE', 'TEST_CLASS_CLEANUP', 'TEST_METHOD' ]
+
+TabWidth: 2
+
+#UseCRLF: false
+
+UseTab: false
