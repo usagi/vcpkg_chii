@@ -32,6 +32,15 @@ mkdir build && pushd build && cmake .. -DVCPKG_CHII_ENABLE=OFF
 
 - [example](./example)
 
+*Note*: Need [vcpkg](https://github.com/microsoft/vcpkg) and [CMake](https://cmake.org/) installed environment.
+
+1. `cd example`
+2. `mkdir build`
+3. `cd build`
+4. `cmake ..` // no needs brabrabra...
+5. `cmake --build .`
+6. `ctest` or `./my_test`
+
 ## License
 
 [MIT](LICENSE)
