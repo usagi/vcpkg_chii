@@ -18,14 +18,14 @@ This is a simple .cmake gimmicks for CMake and vcpkg:
 
 1. cd <your-project-root>
 2. bootstrap:
-  - (Unix-like ): `curl -s https://raw.githubusercontent.com/usagi/vcpkg_chii/master/bootstrap.sh | sh`
-  - (powershell): `powershell -c "(New-Object Net.WebClient).Proxy.Credentials=[Net.CredentialCache]::DefaultNetworkCredentials;iwr('https://raw.githubusercontent.com/usagi/vcpkg_chii/master/bootstrap.ps1')|iex"`
+    - (Unix-like ): `curl -s https://raw.githubusercontent.com/usagi/vcpkg_chii/master/bootstrap.sh | sh`
+    - (powershell): `powershell -c "(New-Object Net.WebClient).Proxy.Credentials=[Net.CredentialCache]::DefaultNetworkCredentials;iwr('https://raw.githubusercontent.com/usagi/vcpkg_chii/master/bootstrap.ps1')|iex"`
 
 Notes:
 
 - Unix-like method be required `sh` & `curl`.
-- bootstrap.sh source code is [here:bootstrap.sh](bootstrap.sh).
-- bootstrap.ps1 source code is [here:bootstrap.ps1](bootstrap.ps1).
+- bootstrap.sh source code is here -> [bootstrap.sh](bootstrap.sh).
+- bootstrap.ps1 source code is here -> [bootstrap.ps1](bootstrap.ps1).
 
 ### Usage 1-B: Without bootstrap, in manually
 
