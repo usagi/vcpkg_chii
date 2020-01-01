@@ -1,4 +1,4 @@
-# Usage: (New-Object Net.WebClient).Proxy.Credentials=[Net.CredentialCache]::DefaultNetworkCredentials;iwr('https://raw.githubusercontent.com/usagi/vcpkg_chii/master/bootstrap.ps1')|iex
+# Usage: powershell -c "(New-Object Net.WebClient).Proxy.Credentials=[Net.CredentialCache]::DefaultNetworkCredentials;iwr('https://raw.githubusercontent.com/usagi/vcpkg_chii/master/bootstrap.ps1')|iex"
 
 $BASE = 'https://raw.githubusercontent.com/usagi/vcpkg_chii/master/cmake/'
 $FILES = @(
