@@ -14,9 +14,36 @@ This is a simple .cmake gimmicks for CMake and vcpkg:
 
 ## Usage
 
-1. Get the `.cmake` file(s) into your project or CMake module directory [cmake](./cmake)
-2. `include` in your `CMakeLists.txt` ( See also [example/CMakeLists.txt](example/CMakeLists.txt) in the example project )
-3. Use `vcpkg_chii_find_package` instead of `find_package` ( See also the example too )
+### Usage 1-A: With bootstrap.(sh|ps1) // recomended!
+
+1. cd <your-project-root>
+2. bootstrap:
+  - (Unix-like ): `curl -s https://raw.githubusercontent.com/usagi/vcpkg_chii/master/bootstrap.sh | sh`
+  - (powershell): `powershell -c "(New-Object Net.WebClient).Proxy.Credentials=[Net.CredentialCache]::DefaultNetworkCredentials;iwr('https://raw.githubusercontent.com/usagi/vcpkg_chii/master/bootstrap.ps1')|iex"`
+
+Notes:
+
+- Unix-like method be required `sh` & `curl`.
+- bootstrap.sh source code is [here:bootstrap.sh](bootstrap.sh).
+- bootstrap.ps1 source code is [here:bootstrap.ps1](bootstrap.ps1).
+
+### Usage 1-B: Without bootstrap, in manually
+
+- Get these `.cmake` file(s) into your project or CMake module directory [cmake](./cmake)
+   1. [cmake/vcpkg.chii.cmake](cmake/vcpkg.chii.cmake)
+   2. [cmake/vcpkg.chii_enable.cmake](cmake/vcpkg.chii_enable.cmake)
+   3. [cmake/vcpkg.chii_auto_triplet.cmake](cmake/vcpkg.chii_auto_triplet.cmake)
+   4. [cmake/vcpkg.chii_auto_toolchain_file.cmake](cmake/vcpkg.chii_auto_toolchain_file.cmake)
+   5. [cmake/vcpkg.chii_find_package.cmake](cmake/vcpkg.chii_find_package.cmake)
+
+### Usage 2: Inject vcpkg_chii into your CMakeLists.txt
+
+1. `include` in your `CMakeLists.txt` ( See also [example/CMakeLists.txt](example/CMakeLists.txt) in the example project )
+   - e.g. `include(cmake/vcpkg_chii.cmake)`
+2. Use `vcpkg_chii_find_package` instead of `find_package` ( See also the example too )
+   - e.g. `find_package( Eigen3 )`, `find_package( GTest )`, ...
+
+### Usage 3: cmake time
 
 ```cmake
 # With vcpkg_chii features ( full automatically package resolving with vcpkg and vcpkg-chii! )
