@@ -74,4 +74,4 @@ mkdir build && pushd build && cmake .. -DVCPKG_CHII_ENABLE=OFF
 
 ## Author
 
-Usagi Ito <the@usagi.network> <https://twitter.com/USAGI_WRP> <https://www.facebook.com/usagi.wrp>
+Usagi Ito <https://github.com/usagi>
